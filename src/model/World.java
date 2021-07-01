@@ -44,7 +44,7 @@ public class World {
             }
             maps.get(currentMap).update();
             pickup();
-        }else{
+        }else if(this.players.get(0).DeadEnd){
             List<String> titles = new ArrayList<>();
             List<String> texts = new ArrayList<>();
             titles.add("    Sorry");
