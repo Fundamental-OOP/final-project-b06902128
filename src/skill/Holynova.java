@@ -8,13 +8,14 @@ import model.World;
 import model.Sprite;
 
 public class Holynova extends Skill {
-    private final int VALUE = 100;
+    private final int VALUE;
 
     public Holynova(Ninja ninja) {
         super(ninja, null);
         this.name = "holynova";
         this.required = new int[] {1, 1, 1, 1};
         this.stop = true;
+        this.VALUE = ninja.getDamage()*2;
     }
 
     public void doEffect() {
