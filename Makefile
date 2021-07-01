@@ -1,3 +1,3 @@
 run:
 	javac -cp . -sourcepath src -d out src/*.java
-	java -cp out Main
+	java -Xmx4096m -cp out Main
