@@ -52,7 +52,7 @@ public class ThirdMap extends Map {
     @Override
     public void init(World world){
         super.init(world);
-        boss = new Ninja(10, 10, new Point(1200, 192), 2);
+        boss = new Ninja(80, 30, new Point(1200, 192), 2);
         AI ai = new NinjaBossAI(world,(Ninja)world.getPlayers().get(0),boss);
         this.addSprite(boss, ai);
     }

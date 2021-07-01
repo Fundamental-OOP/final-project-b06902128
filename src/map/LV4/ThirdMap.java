@@ -2,6 +2,7 @@ package map.LV4;
 
 import controller.AI;
 import controller.ZombieNormalAI;
+import map.conversation.MapConversation;
 import map.mapItems.*;
 import model.Map;
 import model.World;
@@ -9,9 +10,18 @@ import ninja.Ninja;
 import zombie.Zombie;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ThirdMap extends Map {
     public ThirdMap() {
+        java.util.List<String> titles = new ArrayList<>();
+        List<String> texts = new ArrayList<>();
+        titles.add("Congratulations!");
+        texts.add("         You Win!!!!");
+        int[] lines_per_page = {1};
+        this.setConversation(new MapConversation(new Point(280, 20), new Dimension(750, 400), 1, texts, lines_per_page, titles));
+
         this.addItem(new BackGround(new Point(0, 0), new Dimension(1370, 700), 1));
         this.addItem(new Floor(new Point(-10, -500), new Dimension(10, 1300), 2));
         this.addItem(new Floor(new Point(1370, -500), new Dimension(50, 1300), 2));

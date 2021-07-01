@@ -51,11 +51,11 @@ public class StartMap extends Map {
     @Override
     public void init(World world){
         super.init(world);
-        Monster m1 = new Monster(100, 100, new Point(230, 107), Generator.getGem());
-        Monster m2 = new Monster(100, 100, new Point(750, 117), Generator.getGem());
-        Monster m3 = new Monster(100, 100, new Point(570, 100), Generator.getGem());
-        Monster m4 = new Monster(100, 100, new Point(1200, 200), Generator.getGem());
-        Monster m5 = new Monster(200, 100, new Point(1020, 150), Generator.getGem());
+        Monster m1 = new Monster(500, 300, new Point(230, 107), Generator.getGem());
+        Monster m2 = new Monster(500, 300, new Point(750, 117), Generator.getGem());
+        Monster m3 = new Monster(500, 300, new Point(570, 100), Generator.getGem());
+        Monster m4 = new Monster(500, 300, new Point(1200, 200), Generator.getGem());
+        Monster m5 = new Monster(500, 300, new Point(1020, 150), Generator.getGem());
         AI ai1 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m1);
         AI ai2 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m2);
         AI ai3 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m3);

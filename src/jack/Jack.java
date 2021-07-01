@@ -18,7 +18,7 @@ import static utils.ImageStateUtils.imageStatesFromFolder;
 
 
 public class Jack extends HealthPointSprite {
-    public static final int JACK_HP = 500;
+    public static final int JACK_HP = 5000;
     private final SpriteShape shape;
     private final FiniteStateMachine fsm;
     private final Set<Direction> directions = new CopyOnWriteArraySet<>();

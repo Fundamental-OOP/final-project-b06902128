@@ -1,6 +1,7 @@
 package model;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -9,6 +10,7 @@ import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toSet;
 
 import controller.*;
+import map.conversation.MapConversation;
 import map.mapItems.Portal;
 import media.AudioPlayer;
 import monster.Gem;
@@ -39,13 +41,16 @@ public class World {
         if(maps.get(currentMap).isEndConversation() && !this.players.get(0).DeadEnd){
             for (Sprite player : players) {
                 player.update();
-                if(player.DeadEnd == true){
-                    this.removePlayer(player);
-                }
             }
             maps.get(currentMap).update();
             pickup();
         }else{
+            List<String> titles = new ArrayList<>();
+            List<String> texts = new ArrayList<>();
+            titles.add("    Sorry");
+            texts.add("         You Lose!!!!");
+            int[] lines_per_page = {1};
+            maps.get(currentMap).setConversation(new MapConversation(new Point(280, 20), new Dimension(750, 400), 1, texts,  lines_per_page, titles));
         }
     }
 
@@ -206,9 +211,13 @@ public class World {
     // Actually, directly couple your model with the class "java.awt.Graphics" is not a good design
     // If you want to decouple them, create an interface that encapsulates the variation of the Graphics.
     public void render(Graphics g) {
-        maps.get(currentMap).render(g);
-        for (Sprite player : players) {
-            player.render(g);
+        if(this.players.get(0).DeadEnd) {
+            maps.get(currentMap).renderconversation(g);
+        }else{
+            maps.get(currentMap).render(g);
+            for (Sprite player : players) {
+                player.render(g);
+            }
         }
     }
 

@@ -48,7 +48,7 @@ public class Main {
 
 
         // initialization procedure
-        Ninja p1 = new Ninja(100, 20, new Point(20, 512), 1);
+        Ninja p1 = new Ninja(100, 50, new Point(20, 512), 1);
         World world = new World(new NinjaCollisionHandler(), p1);  // model
         world.addMap(new map.LV1.StartMap());
         world.addMap(new map.LV1.SecondMap());

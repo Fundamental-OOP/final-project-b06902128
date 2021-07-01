@@ -49,10 +49,10 @@ public class SecondMap extends Map {
     @Override
     public void init(World world){
         super.init(world);
-        Monster m1 = new Monster(100, 100, new Point(500, 557), Generator.getGem());
-        Monster m2 = new Monster(100, 100, new Point(700, 557), Generator.getGem());
-        Monster m3 = new Monster(100, 100, new Point(900, 557), Generator.getGem());
-        Monster m4 = new Monster(200, 100, new Point(1000, 557), Generator.getGem());
+        Monster m1 = new Monster(500, 350, new Point(500, 557), Generator.getGem());
+        Monster m2 = new Monster(500, 350, new Point(700, 557), Generator.getGem());
+        Monster m3 = new Monster(500, 350, new Point(900, 557), Generator.getGem());
+        Monster m4 = new Monster(500, 350, new Point(1000, 557), Generator.getGem());
         AI ai1 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m1);
         AI ai2 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m2);
         AI ai3 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m3);

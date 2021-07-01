@@ -47,10 +47,10 @@ public class SecondMap extends Map {
     public void init(World world){
         super.init(world);
         super.init(world);
-        boss1 = new Jack(10, new Point(900, 346), 1);
+        boss1 = new Jack(400, new Point(900, 346), 1);
         ai1 = new JackBossAI(world,(Ninja)world.getPlayers().get(0),boss1);
         this.addSprite(boss1, ai1);
-        boss2 = new Jack(10, new Point(boss1.getLocation().x, 92), 2);
+        boss2 = new Jack(500, new Point(boss1.getLocation().x, 92), 2);
         ai2 = new JackBossAI(world,(Ninja)world.getPlayers().get(0),boss2);
     }
 

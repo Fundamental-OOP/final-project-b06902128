@@ -20,7 +20,7 @@ import static utils.ImageStateUtils.imageStatesFromFolder;
 
 
 public class Zombie extends HealthPointSprite {
-    public static final int ZOMBIE_HP = 500;
+    public static final int ZOMBIE_HP = 700;
     public static final Object AUDIO_ZOMBIESCREAM1 = "zombie1";
     public static final Object AUDIO_ZOMBIESCREAM2 = "zombie2";
     public static final Object AUDIO_ZOMBIEDEAD = "zombie3";

@@ -146,4 +146,8 @@ public class Map {
             conversation.render(g);
         }
     }
+
+    public void renderconversation(Graphics g) {
+        conversation.render(g);
+    }
 }

@@ -62,8 +62,8 @@ public class ThirdMap extends Map {
     public void init(World world){
         super.init(world);
         Zombie m1 = new Zombie(100,new Point(1200, 160), 1);
-        Zombie m2 = new Zombie(100, new Point(900, 160), 2);
-        Zombie m3 = new Zombie(100, new Point(750, 160), 1);
+        Zombie m2 = new Zombie(150, new Point(900, 160), 2);
+        Zombie m3 = new Zombie(150, new Point(750, 160), 1);
         AI ai1 =  new ZombieNormalAI(world,(Ninja)world.getPlayers().get(0),m1);
         AI ai2 =  new ZombieNormalAI(world,(Ninja)world.getPlayers().get(0),m2);
         AI ai3 =  new ZombieNormalAI(world,(Ninja)world.getPlayers().get(0),m3);

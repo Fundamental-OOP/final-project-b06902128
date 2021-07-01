@@ -46,8 +46,8 @@ public class StartMap extends Map {
     @Override
     public void init(World world){
         super.init(world);
-        Zombie m1 = new Zombie(10, new Point(1000, 510), 1);
-        Zombie m2 = new Zombie(10, new Point(300, 510), 2);
+        Zombie m1 = new Zombie(200, new Point(1000, 510), 1);
+        Zombie m2 = new Zombie(200, new Point(300, 510), 2);
         AI ai1 = new ZombieNormalAI(world,(Ninja)world.getPlayers().get(0), m1);
         AI ai2 = new ZombieNormalAI(world,(Ninja)world.getPlayers().get(0), m2);
         this.addSprite(m1, ai1);

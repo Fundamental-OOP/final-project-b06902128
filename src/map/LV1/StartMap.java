@@ -115,8 +115,8 @@ public class StartMap extends Map {
         Monster m2 = new Monster(100, 100, new Point(1220, 557), Generator.getGem());
         Monster m3 = new Monster(100, 100, new Point(760, 357), Generator.getGem());
         Monster m4 = new Monster(100, 100, new Point(1220, 37), Generator.getGem());
-        Monster m5 = new Monster(200, 100, new Point(550, 557), Generator.getGem());
-        Monster m6 = new Monster(200, 100, new Point(1070, 37), Generator.getGem());
+        Monster m5 = new Monster(100, 100, new Point(550, 557), Generator.getGem());
+        Monster m6 = new Monster(100, 100, new Point(1070, 37), Generator.getGem());
         AI ai1 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m1);
         AI ai2 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m2);
         AI ai3 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m3);

@@ -77,13 +77,13 @@ public class ThirdMap extends Map {
     @Override
     public void init(World world){
         super.init(world);
-        Monster m1 = new Monster(100, 100, new Point(250, 127), Generator.getGem());
-        Monster m3 = new Monster(100, 100, new Point(700, 127), Generator.getGem());
-        Monster m4 = new Monster(100, 100, new Point(1000, 127), Generator.getGem());
-        Monster m5 = new Monster(200, 100, new Point(1300, 557), Generator.getGem());
-        Monster m7 = new Monster(200, 100, new Point(850, 557), Generator.getGem());
-        Monster m8 = new Monster(200, 100, new Point(690, 557), Generator.getGem());
-        Monster m9 = new Monster(200, 100, new Point(385, 557), Generator.getGem());
+        Monster m1 = new Monster(400, 200, new Point(250, 127), Generator.getGem());
+        Monster m3 = new Monster(400, 200, new Point(700, 127), Generator.getGem());
+        Monster m4 = new Monster(400, 200, new Point(1000, 127), Generator.getGem());
+        Monster m5 = new Monster(400, 200, new Point(1300, 557), Generator.getGem());
+        Monster m7 = new Monster(400, 200, new Point(850, 557), Generator.getGem());
+        Monster m8 = new Monster(400, 200, new Point(690, 557), Generator.getGem());
+        Monster m9 = new Monster(400, 200, new Point(385, 557), Generator.getGem());
         AI ai1 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m1);
         AI ai3 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m3);
         AI ai4 =  new MonsterNormalAI(world,(Ninja)world.getPlayers().get(0),m4);
